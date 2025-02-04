@@ -1,2 +1,15 @@
 # KivoText
- An online website that can store and share the text.
+
+## 介绍
+
+KivoText是一款线上文本储存和文本共享的平台。
+
+## 部署
+
+1. 使用任意方法下载源码
+2. 解压缩，取出`structure.sql`备用
+3. 将剩余源码上传至服务器
+4. 新建数据库，配置`config.php`文件以连接数据库
+5. 开始使用吧！
+
+_感谢您的使用！_
