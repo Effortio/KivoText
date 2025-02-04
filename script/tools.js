@@ -303,6 +303,6 @@ function isLogined() {
 
 {
     for (const element of document.getElementsByClassName("platform-name")) {
-        element.innerText = "Kivotext";
+        element.innerText = "KivoText";
     }
 }
