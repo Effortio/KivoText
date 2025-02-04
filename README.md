@@ -1,2 +1,2 @@
 # KivoText
- An online website that can store ans share the text.
+ An online website that can store and share the text.
