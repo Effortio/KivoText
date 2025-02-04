@@ -56,9 +56,11 @@ function bindEvents(logined) {
 
         setStyle();
 
-        document.getElementById("download-apk-link").addEventListener("click", () => {
-            openPopup("mobilephone-apk-recommend");
-        });
+        if (document.getElementById("download-apk-link")) {
+            document.getElementById("download-apk-link").addEventListener("click", () => {
+                openPopup("mobilephone-apk-recommend");
+            });
+        }
 
         document.getElementById("no-ask-download-apk-again").addEventListener("change", () => {
             if (document.getElementById("no-ask-download-apk-again").checked) {
