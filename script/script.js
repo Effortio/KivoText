@@ -499,7 +499,7 @@ function loadFileMeta(callback = {}, changeTextarea = false, fileid = document.g
             document.getElementById("file-editable-label").innerText = "只读模式(账号限制)";
             document.getElementById("file-editable-label").className = "yellow-text";
         } else {
-            document.getElementById("file-editable-label").innerText = "-";
+            document.getElementById("file-editable-label").innerText = "可写模式(私人文件)";
             document.getElementById("file-editable-label").className = "green-text";
         }
         textStatic();
