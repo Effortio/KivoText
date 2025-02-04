@@ -167,7 +167,6 @@
 						<select id="font-selector">
 							<option value="MiSans">MiSans</option>
 							<option value="unset">默认字体</option>
-							<option disabled>字重调节不可用</option>
 						</select>
 						<div class="separator">主题选择</div>
 						<label>选择<select id="theme-selector">
@@ -183,7 +182,7 @@
 							</tr>
 						</table>
 					</div>
-					<div class="pop-content" data-type="mobilephone-apk-recommend">
+					<!-- <div class="pop-content" data-type="mobilephone-apk-recommend">
 						<h2>客户端<span class="platform-name"></span>推荐</h2>
 						<div class="separator">介绍</div>
 						<p>在客户端的<span class="platform-name"></span>，你将获得更舒适的用户体验，以及全方位的UI适配。</p>
@@ -194,7 +193,7 @@
 						<div class="center">
 							<label><input type="checkbox" id="no-ask-download-apk-again" checked>下次启动不再提示</label>
 						</div>
-					</div>
+					</div> -->
 					<div class="pop-content" data-type="shared-rule">
 						<h2>文件共享规则</h2>
 						<div class="separator">未共享时</div>
@@ -228,8 +227,6 @@
 						</table>
 						<div class="separator">UA信息</div>
 						<code id="user-UA-label"></code>
-						<div class="separator">Token</div>
-						<code id="token-label"></code>
 					</div>
 					<div class="pop-content" data-type="file-meta">
 						<h2>文件属性</h2>
@@ -261,7 +258,7 @@
 					</div>
 				</div>
 				<div id="close-hint" class="center">
-					关闭 & 返回
+					返回
 				</div>
 			</div>
 			<div class="top-banner">
@@ -277,6 +274,8 @@
 							<span id="last-online-time-label"></span><br>
 							<b>登录IP</b><br>
 							<span id="login-ip-label"></span>
+							<b>Token</b><br>
+							<code id="token-label"></code>
 						</small>
 						<a id="more-account-settings-link">账号操作</a>
 						<a id="logout-link">退出登录</a>
