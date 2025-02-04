@@ -300,3 +300,9 @@ function getFileNameById(id) {
 function isLogined() {
     return localStorage.getItem("KivoText-username") && localStorage.getItem("KivoText-encpassword");
 }
+
+{
+    for (const element of document.getElementsByClassName("platform-name")) {
+        element.innerText = "Kivotext";
+    }
+}

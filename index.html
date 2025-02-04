@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="initial-scale=1.0">
-		<title>在线文档/剪贴板</title>
+		<title>在线文档、剪贴板服务</title>
 		<link rel="stylesheet" href="css/global.css">
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/miFonts.css">
@@ -16,7 +16,7 @@
 				<div class="loading-circle" id="loading-circle-1"></div>
 				<h2>正在加载……</h2>
 				<div><small>正在加载<span id="now-loading-content">DOMContent</span></small></div>
-				<p>欢迎来到<b>KivoText</b>！</p>
+				<p>欢迎来到<b><span class="platform-name"></span></b>！</p>
 			</div>
 			<div id="popup-shader"></div>
 			<div id="popup-border">
@@ -184,12 +184,12 @@
 						</table>
 					</div>
 					<div class="pop-content" data-type="mobilephone-apk-recommend">
-						<h2>客户端KivoText推荐</h2>
+						<h2>客户端<span class="platform-name"></span>推荐</h2>
 						<div class="separator">介绍</div>
-						<p>在客户端的KivoText，你将获得更舒适的用户体验，以及全方位的UI适配。</p>
+						<p>在客户端的<span class="platform-name"></span>，你将获得更舒适的用户体验，以及全方位的UI适配。</p>
 						<div class="separator">下载</div>
 						<p>客户端由Duckxu提供，请移步此处以下载：</p>
-						<p class="center"><a href="http://kivotext.duckxu.com">APK下载</a></p>
+						<p class="center"><a href="http://<span class=" platform-name"></span>.duckxu.com">APK下载</a></p>
 						<p><small>提示：客户端版本可能与网页端版本略有不同，属正常现象</small></p>
 						<div class="center">
 							<label><input type="checkbox" id="no-ask-download-apk-again" checked>下次启动不再提示</label>
@@ -265,7 +265,7 @@
 				</div>
 			</div>
 			<div class="top-banner">
-				<div class="title center">KivoText</div>
+				<div class="title center"><span class="platform-name"></span></div>
 				<div id="login-info">
 					<div><b>登录信息</b></div>
 					<div id="login-info-menu">
@@ -288,7 +288,7 @@
 			<div id="need-login" class="center">
 				<h2>请先登录</h2>
 				<p>登录后可以使用个人文件和共享文件服务。</p>
-				<p>KivoText致力于为用户提供更隐私的服务，因此必须登录后才能使用。</p>
+				<p><span class="platform-name"></span>致力于为用户提供更隐私的服务，因此必须登录后才能使用。</p>
 				<p><button onclick="location.href = 'access.html'">登录 / 注册</button></p>
 			</div>
 			<div id="main-body">
@@ -526,6 +526,7 @@
 		</main>
 	</body>
 	<!-- SCRIPTS -->
+	<script src="script/custom.js"></script>
 	<script src="script/sha1.js"></script>
 	<script src="script/tools.js"></script>
 	<script src="script/bindEvents.js"></script>

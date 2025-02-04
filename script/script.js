@@ -535,15 +535,15 @@ window.onload = () => {
     xmlhttp.onreadystatechange = function () {
         if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
             themes = JSON.parse(xmlhttp.responseText);
-            if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent) && !/Html5Plus/i.test(navigator.userAgent)) {
-                // 手机版且不是MUI
-                if (!getCookie("KivoText-recommendedAPK") || getCookie("KivoText-recommendedAPK") == "false") {
-                    //未推荐过
-                    openPopup("mobilephone-apk-recommend");
-                    document.cookie = "KivoText-recommendedAPK=false; max-age=" + (86400 * 7);
-                    document.getElementById("no-ask-download-apk-again").checked = "";
-                }
-            }
+            // if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent) && !/Html5Plus/i.test(navigator.userAgent)) {
+            //     // 手机版且不是MUI
+            //     if (!getCookie("KivoText-recommendedAPK") || getCookie("KivoText-recommendedAPK") == "false") {
+            //         //未推荐过
+            //         openPopup("mobilephone-apk-recommend");
+            //         document.cookie = "KivoText-recommendedAPK=false; max-age=" + (86400 * 7);
+            //         document.getElementById("no-ask-download-apk-again").checked = "";
+            //     }
+            // }
 
             if (isLogined()) {
                 document.getElementById("now-loading-content").innerText = "用户数据";

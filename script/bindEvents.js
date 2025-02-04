@@ -52,6 +52,7 @@ function bindEvents(logined) {
             document.getElementById("theme-selector").addEventListener("change", () => {
                 setStyle();
             });
+
         }
 
         setStyle();

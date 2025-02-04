@@ -77,7 +77,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             if (mysqli_num_rows(mysqli_query($con, "SELECT * FROM `users` WHERE `name` = '" . $_REQUEST["name"] . "'")) > 0) {
                 echo "register.error.alreadyExists";
             } else {
-                mysqli_query($con, "INSERT INTO `users` VALUES (NULL,'" . mysqli_escape_string($con, $_REQUEST["name"]) . "','" . $_REQUEST["passwordENC"] . "',CURRENT_TIMESTAMP(),'" . getRemoteIP() . "','" . randomToken() . "','" . $token . "')");
+                mysqli_query($con, "INSERT INTO `users` VALUES (NULL,'" . mysqli_escape_string($con, $_REQUEST["name"]) . "','" . $_REQUEST["passwordENC"] . "',CURRENT_TIMESTAMP(),'" . getRemoteIP() . "','" . randomToken() . "')");
                 $addid = mysqli_insert_id($con);
                 mysqli_query($con, "INSERT INTO `accessinfo` VALUES (" . $addid . "," . constant('default-file-length-limit') . "," . constant('default-files-count-limit') . ",1)");
                 if ($_REQUEST["keeplogined"] == "true") {
