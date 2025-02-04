@@ -63,13 +63,13 @@ function bindEvents(logined) {
             });
         }
 
-        document.getElementById("no-ask-download-apk-again").addEventListener("change", () => {
-            if (document.getElementById("no-ask-download-apk-again").checked) {
-                document.cookie = "KivoText-recommendedAPK=true; max-age=" + (86400 * 7);
-            } else {
-                document.cookie = "KivoText-recommendedAPK=false; max-age=" + (86400 * 7);
-            }
-        });
+        // document.getElementById("no-ask-download-apk-again").addEventListener("change", () => {
+        //     if (document.getElementById("no-ask-download-apk-again").checked) {
+        //         document.cookie = "KivoText-recommendedAPK=true; max-age=" + (86400 * 7);
+        //     } else {
+        //         document.cookie = "KivoText-recommendedAPK=false; max-age=" + (86400 * 7);
+        //     }
+        // });
     }
 
     document.getElementById("close-hint").addEventListener("click", () => {
